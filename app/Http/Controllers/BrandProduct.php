@@ -72,7 +72,6 @@ class BrandProduct extends Controller
         Session::put('message', 'Xoá thương hiệu sản phẩm thành công');
         return Redirect::to('all-brand-product');
     }
-
     //end function admin pages
 
     public function show_brand_home($brand_id){
