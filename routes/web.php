@@ -14,6 +14,10 @@
 Route::get('/', 'HomeController@index');
 Route::get('/trang-chu','HomeController@index');
 
+//danh mục sản phẩm trang chủ
+Route::get('/danh-muc-san-pham/{category_id}','CategoryProduct@show_category_home');
+Route::get('/thuong-hieu-san-pham/{brand_id}','BrandProduct@show_brand_home');
+
 //backend
 Route::get('/admin','AdminController@index');
 Route::get('/dashboard','AdminController@show_dashboard');
